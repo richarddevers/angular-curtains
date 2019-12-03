@@ -1,0 +1,8 @@
+<p>
+<b>La vue ci-dessous représente votre rideau et les espaces et plis de celui-ci.</b>
+</p>
+<mat-grid-list class="curtain"  cols="{{espaces}}" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let espace of counter(espaces)" >
+  {{espace}}
+  </mat-grid-tile>
+</mat-grid-list>
