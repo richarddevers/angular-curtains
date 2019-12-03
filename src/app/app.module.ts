@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CurtainsComponent } from "./curtains/curtains.component";
 import { InputsComponent } from "./inputs/inputs.component";
 import { ParentComponent } from './parent/parent.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { ParentComponent } from './parent/parent.component';
     MatGridListModule,
     MatInputModule,
     MatSelectModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDividerModule
   ],
   declarations: [AppComponent, CurtainsComponent, InputsComponent, ParentComponent],
   bootstrap: [AppComponent]
