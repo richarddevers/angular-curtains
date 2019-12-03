@@ -9,7 +9,7 @@ import { DEFAULT_NOMBRE_PLIS, DEFAULT_NOMBRE_ESPACE } from "../default";
 })
 export class CurtainsComponent implements OnInit {
   private _plis: number = DEFAULT_NOMBRE_PLIS;
-  private espaces: number = DEFAULT_NOMBRE_ESPACE;
+  espaces: number = DEFAULT_NOMBRE_ESPACE;
 
   @Input() set plis(i: number) {
     this._plis = i;
