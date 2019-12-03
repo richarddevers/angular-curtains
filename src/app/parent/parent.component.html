@@ -1,35 +1,41 @@
-<app-inputs 
-(plisNumber)="onPlisChange($event)"
-(taillePlis)="onTaillePlisChange($event)"
-(largeurBrute)="onLargeurBruteChange($event)"
-(devanture)="onDevantureChange($event)"
-(retour)="onRetourChange($event)"
-></app-inputs>
+<app-inputs (plisNumber)="onPlisChange($event)" (taillePlis)="onTaillePlisChange($event)"
+	(largeurBrute)="onLargeurBruteChange($event)" (devanture)="onDevantureChange($event)"
+	(retour)="onRetourChange($event)"></app-inputs>
 
-<app-curtains 
-[plis]="parentNumberPlis"
-(sharedEspaces)="onSpaceChange($event)"
-></app-curtains>
+<app-curtains [plis]="parentNumberPlis" (sharedEspaces)="onSpaceChange($event)"></app-curtains>
 
-
-<p>
-  <b><u>Formule appliqué pour le calcul de la taille total:</u></b>
-  <br>
+<div class="result">
+	<p>
+		<b><u>Formule appliqué pour le calcul de la taille total:</u></b>
+		<br>
   largeur_brute + retour + devanture + (nombre_de_plis * taille_dun_plis)
 </p>
 
-<p>
-  Soit {{ parentLargeurBrute }} + {{ parentRetour }} + {{ parentDevanture }} + ( {{ parentNumberPlis }} * {{ parentTaillePlis }} )
-</p>
+		<p>
+			Soit {{ parentLargeurBrute }} + {{ parentRetour }} + {{ parentDevanture }} + ( {{ parentNumberPlis }} *
+			{{ parentTaillePlis }} )
+		</p>
 
-<p>
-  La largeur totale est donc de <b>{{ getResult() }} cm </b>
-</p>
+		<p>
+			La largeur totale est donc de <b>{{ getResult() }} cm </b>
+		</p>
 
+		<p>
+			Nombre des plis: <b>{{ parentNumberPlis }}</b>
+		</p>
 
-<p>
-  Nombre d'espaces: <b>{{ parentNumberSpace }}</b>
-</p>
-<p>
-  Taille des espaces: <b>{{ getSpaceSize() }} cm</b>
-</p>
+		<p>
+			Taille d'un plis: <b>{{ parentTaillePlis }} cm</b>
+		</p>
+		
+    <p>
+			Nombre d'espaces: <b>{{ parentNumberSpace }}</b>
+		</p>
+		<p>
+			Taille des espaces: <b>{{ getSpaceSize() }} cm</b>
+		</p>
+
+		<p>
+			Made with ❤️ by <a href="https://www.linkedin.com/in/richarddevers/">Richard Devers</a> for his lovely wife <b>@NacreEtCapitons</b>
+		</p>
+</div>

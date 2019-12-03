@@ -12,7 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CurtainsComponent } from "./curtains/curtains.component";
 import { InputsComponent } from "./inputs/inputs.component";
 import { ParentComponent } from './parent/parent.component';
-import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   imports: [
     ReactiveFormsModule,
@@ -23,7 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     MatSelectModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent, CurtainsComponent, InputsComponent, ParentComponent, FooterComponent],
+  declarations: [AppComponent, CurtainsComponent, InputsComponent, ParentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

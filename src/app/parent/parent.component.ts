@@ -51,11 +51,14 @@ export class ParentComponent implements OnInit {
 
   getResult(): number {
     return (
-      this.parentRetour + this.parentDevanture + this.parentLargeurBrute + (this.parentTaillePlis * this.parentNumberPlis)
+      this.parentRetour +
+      this.parentDevanture +
+      this.parentLargeurBrute +
+      this.parentTaillePlis * this.parentNumberPlis
     );
   }
 
-  getSpaceSize():string{
-    return (this.parentLargeurBrute / this.parentNumberSpace).toFixed(2);;
+  getSpaceSize(): string {
+    return (this.parentLargeurBrute / this.parentNumberSpace).toFixed(2);
   }
 }
