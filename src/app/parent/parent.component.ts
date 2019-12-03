@@ -27,6 +27,7 @@ export class ParentComponent implements OnInit {
 
   onPlisChange(i: number): void {
     this.parentNumberPlis = i;
+    this.parentNumberSpace = this.parentNumberPlis - 1;
   }
 
   onSpaceChange(i: number): void {

@@ -56,7 +56,7 @@ export class InputsComponent implements OnInit {
     this.devanture.emit(+i);
   }
 
-  setRetour(i: any) {
+  setRetour(i: string) {
     this.retour.emit(+i);
   }
 }
