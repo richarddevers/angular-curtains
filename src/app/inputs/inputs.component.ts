@@ -20,13 +20,13 @@ export class InputsComponent implements OnInit {
   @Output() devanture = new EventEmitter<number>();
   @Output() retour = new EventEmitter<number>();
 
-  private plisNumberView: number = DEFAULT_NOMBRE_PLIS;
-  private spaceNumberView: number = DEFAULT_NOMBRE_ESPACE;
+  plisNumberView: number = DEFAULT_NOMBRE_PLIS;
+  spaceNumberView: number = DEFAULT_NOMBRE_ESPACE;
 
-  private DEFAULT_LARGEUR: number = DEFAULT_LARGEUR;
-  private DEFAULT_RETOUR: number = DEFAULT_RETOUR;
-  private DEFAULT_DEVANTURE: number = DEFAULT_DEVANTURE;
-  private DEFAULT_TAILLE_PLIS: number = DEFAULT_TAILLE_PLIS;
+  DEFAULT_LARGEUR: number = DEFAULT_LARGEUR;
+  DEFAULT_RETOUR: number = DEFAULT_RETOUR;
+  DEFAULT_DEVANTURE: number = DEFAULT_DEVANTURE;
+  DEFAULT_TAILLE_PLIS: number = DEFAULT_TAILLE_PLIS;
 
   constructor() {}
 
