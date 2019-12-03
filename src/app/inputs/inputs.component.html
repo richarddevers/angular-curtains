@@ -6,7 +6,7 @@
 
 <mat-form-field>
   <mat-label>Retour (cm)</mat-label>
-  <mat-select #retour value="12" (selectionChange)="setRetour(retour.value)">
+  <mat-select #retour value="{{DEFAULT_RETOUR}}" (selectionChange)="setRetour(retour.value)">
     <mat-option value="2">2</mat-option>
     <mat-option value="2.5">2.5</mat-option>
     <mat-option value="3">3</mat-option>
@@ -39,7 +39,7 @@
 
 <mat-form-field>
   <mat-label>Devanture (cm)</mat-label>
-  <mat-select #devanture value="5" (selectionChange)="setDevanture(devanture.value)">
+  <mat-select #devanture value="{{DEFAULT_DEVANTURE}}" (selectionChange)="setDevanture(devanture.value)">
     <mat-option value="2">2</mat-option>
     <mat-option value="2.5">2.5</mat-option>
     <mat-option value="3">3</mat-option>
@@ -72,7 +72,7 @@
 
 <mat-form-field>
   <mat-label>Nombre de plis</mat-label>
-  <mat-select #plisNumber value="7" (selectionChange)="changePlis(plisNumber.value)">
+  <mat-select #plisNumber value="{{plisNumberView}}" (selectionChange)="setPlis(plisNumber.value)">
     <mat-option value="2">2</mat-option>
     <mat-option value="3">3</mat-option>
     <mat-option value="4">4</mat-option>
@@ -92,7 +92,7 @@
 
 <mat-form-field>
   <mat-label>Taille d'un plis (cm)</mat-label>
-  <mat-select #taillePlis value="10" (selectionChange)="setTaillePlis(taillePlis.value)">
+  <mat-select #taillePlis value="{{DEFAULT_TAILLE_PLIS}}" (selectionChange)="setTaillePlis(taillePlis.value)">
     <mat-option value="5">5</mat-option>
     <mat-option value="5.5">5.5</mat-option>
     <mat-option value="6">6</mat-option>
@@ -113,6 +113,27 @@
     <mat-option value="13.5">13.5</mat-option>
     <mat-option value="14">14</mat-option>
     <mat-option value="14.5">14.5</mat-option>
+    <mat-option value="15">15</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Nombre d'espace</mat-label>
+  <mat-select #spaceNumber value="{{spaceNumberView}}" (selectionChange)="setSpace(spaceNumber.value)">
+    <mat-option value="1">1</mat-option>
+    <mat-option value="2">2</mat-option>
+    <mat-option value="3">3</mat-option>
+    <mat-option value="4">4</mat-option>
+    <mat-option value="5">5</mat-option>
+    <mat-option value="6">6</mat-option>
+    <mat-option value="7">7</mat-option>
+    <mat-option value="8">8</mat-option>
+    <mat-option value="9">9</mat-option>
+    <mat-option value="10">10</mat-option>
+    <mat-option value="11">11</mat-option>
+    <mat-option value="12">12</mat-option>
+    <mat-option value="13">13</mat-option>
+    <mat-option value="14">14</mat-option>
     <mat-option value="15">15</mat-option>
   </mat-select>
 </mat-form-field>
