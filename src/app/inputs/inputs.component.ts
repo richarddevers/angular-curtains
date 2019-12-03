@@ -15,37 +15,33 @@ import {
 })
 export class InputsComponent implements OnInit {
   @Output() plisNumber = new EventEmitter<number>();
-  @Output() spaceNumber = new EventEmitter<number>();
   @Output() taillePlis = new EventEmitter<number>();
   @Output() largeurBrute = new EventEmitter<number>();
   @Output() devanture = new EventEmitter<number>();
   @Output() retour = new EventEmitter<number>();
 
-  private plisNumberView:number = DEFAULT_NOMBRE_PLIS;
-  private spaceNumberView:number = DEFAULT_NOMBRE_ESPACE;
+  private plisNumberView: number = DEFAULT_NOMBRE_PLIS;
+  private spaceNumberView: number = DEFAULT_NOMBRE_ESPACE;
 
-  private DEFAULT_LARGEUR=DEFAULT_LARGEUR;
-  private DEFAULT_RETOUR=DEFAULT_RETOUR;
-  private DEFAULT_DEVANTURE=DEFAULT_DEVANTURE;
-  private DEFAULT_TAILLE_PLIS=DEFAULT_TAILLE_PLIS;
+  private DEFAULT_LARGEUR: number = DEFAULT_LARGEUR;
+  private DEFAULT_RETOUR: number = DEFAULT_RETOUR;
+  private DEFAULT_DEVANTURE: number = DEFAULT_DEVANTURE;
+  private DEFAULT_TAILLE_PLIS: number = DEFAULT_TAILLE_PLIS;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() { }
-
+  ngOnInit() {}
 
   setPlis(i: string) {
     this.plisNumber.emit(+i);
-    this.spaceNumber.emit(+i-1)
-    this.plisNumberView=+i;
-    this.spaceNumberView=+i-1;
+    this.plisNumberView = +i;
+    this.spaceNumberView = +i - 1;
   }
 
   setSpace(i: string) {
-    this.spaceNumber.emit(+i)
-    this.plisNumber.emit(+i+1);
-    this.spaceNumberView=+i;
-    this.plisNumberView=+i+1;
+    this.plisNumber.emit(+i + 1);
+    this.spaceNumberView = +i;
+    this.plisNumberView = +i + 1;
   }
 
   setTaillePlis(i: string) {

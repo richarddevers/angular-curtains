@@ -1,8 +1,15 @@
-<app-inputs (plisNumber)="onPlisChange($event)" (taillePlis)="onTaillePlisChange($event)"
-	(largeurBrute)="onLargeurBruteChange($event)" (devanture)="onDevantureChange($event)"
-	(retour)="onRetourChange($event)"></app-inputs>
+<app-inputs 
+  (plisNumber)="onPlisChange($event)" 
+  (taillePlis)="onTaillePlisChange($event)"
+	(largeurBrute)="onLargeurBruteChange($event)" 
+  (devanture)="onDevantureChange($event)"
+	(retour)="onRetourChange($event)"
+></app-inputs>
 
-<app-curtains [plis]="parentNumberPlis" (sharedEspaces)="onSpaceChange($event)"></app-curtains>
+<app-curtains 
+[plis]="parentNumberPlis" 
+(sharedEspaces)="onSpaceChange($event)"
+></app-curtains>
 
 <div class="result">
 	<p>
