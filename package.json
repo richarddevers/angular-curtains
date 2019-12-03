@@ -27,7 +27,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --prod --aot=true --host=localhost --port=$PORT",
+    "start": "ng serve --prod --aot=true --host=0.0.0.0 --port=$PORT",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
