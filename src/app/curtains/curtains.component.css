@@ -1,5 +1,6 @@
 mat-grid-tile {
   background: linear-gradient(to right, #8eb6c3, lightblue 3%, #8eb6c3 6%, lightblue 9%, lightblue 91%, #8eb6c3 94%, lightblue 97%, #8eb6c3);
+  border: solid 1px #8eb6c3;
   height: 200px;
 }
 
