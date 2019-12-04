@@ -27,7 +27,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host=0.0.0.0 --port=$PORT --disable-host-check",
+    "start": "node --optimize_for_size --max_old_space_size=380 ./node_modules/@angular/cli/bin/ng serve --aot=true --host=0.0.0.0 --port=$PORT --disable-host-check",
     "build": "ng build --prod=true --aot=true",
     "test": "ng test",
     "lint": "ng lint",
