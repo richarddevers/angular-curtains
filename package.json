@@ -23,8 +23,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --prod=true --host=0.0.0.0 --port=$PORT --disable-host-check",
-    "build": "ng build --prod=true --aot=true",
+    "start": "ng serve --host=0.0.0.0 --port=$PORT --disable-host-check",
+    "build": "ng build --aot=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
