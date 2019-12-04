@@ -1,13 +1,12 @@
 {
-  "name": "angular",
-  "version": "0.0.0",
+  "name": "Curtains calculator",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "10.17.0"
   },
   "dependencies": {
     "@angular-devkit/build-angular": "^0.803.20",
-    "@angular-devkit/build-optimizer": "^0.803.20",
     "@angular/animations": "^8.2.14",
     "@angular/cdk": "^8.2.3",
     "@angular/cli": "^8.3.20",
