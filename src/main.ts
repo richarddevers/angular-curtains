@@ -4,10 +4,13 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
-var counter = 0, repeater = setInterval(function() {
-  console.log("[Keep-alive]");
-  counter++;
-}, 30000);
+
+var http = require("http");
+
+setInterval(function() {
+  http.get("http://curtains-calculator.herokuapp.com");
+}, 300000);
+
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {
