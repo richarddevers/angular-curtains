@@ -59,4 +59,5 @@ export class InputsComponent implements OnInit {
   setRetour(i: string) {
     this.retour.emit(+i);
   }
+
 }
