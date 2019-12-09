@@ -1,6 +1,6 @@
-export const DEFAULT_LARGEUR=100;
+export const DEFAULT_LARGEUR=90;
 export const DEFAULT_RETOUR=12;
 export const DEFAULT_DEVANTURE=5;
-export const DEFAULT_NOMBRE_PLIS=7;
 export const DEFAULT_TAILLE_PLIS=10;
-export const DEFAULT_NOMBRE_ESPACE=6;
+export const DEFAULT_NOMBRE_ESPACE=7;
+export const DEFAULT_NOMBRE_PLIS=DEFAULT_NOMBRE_ESPACE + 1;

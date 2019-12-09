@@ -4,6 +4,7 @@
 	(largeurBrute)="onLargeurBruteChange($event)" 
   (devanture)="onDevantureChange($event)"
 	(retour)="onRetourChange($event)"
+	(largeurEspace)="onLargeurEspaceChange($event)"
 ></app-inputs>
 
 <app-curtains 
@@ -14,11 +15,11 @@
 	<p>
 		<b><u>Formule appliqué pour le calcul de la taille total:</u></b>
 		<br>
-  largeur_brute + retour + croisant + (nombre_de_plis * taille_dun_plis)
+  (nombre_despace * taille_dun_espace) + retour + croisant + (nombre_de_plis * taille_dun_plis)
 </p>
 
 		<p>
-			Soit {{ parentLargeurBrute }} + {{ parentRetour }} + {{ parentDevanture }} + ( {{ parentNumberPlis }} *
+			Soit ({{ parentNumberSpace }} * {{ parentLargeurEspace }}) + {{ parentRetour }} + {{ parentDevanture }} + ( {{ parentNumberPlis }} *
 			{{ parentTaillePlis }} )
 		</p>
 
@@ -39,7 +40,7 @@
 			Nombre d'espaces: <b>{{ parentNumberSpace }}</b>
 		</p>
 		<p>
-			Taille des espaces: <b>{{ getSpaceSize() }} cm</b>
+			Taille des espaces: <b>{{ parentLargeurEspace }} cm</b>
 		</p>
     
     <mat-divider></mat-divider>

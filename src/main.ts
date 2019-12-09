@@ -14,6 +14,7 @@ setInterval(function(){
       );
 }, 30000);
 
+
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {

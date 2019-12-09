@@ -19,6 +19,7 @@ export class ParentComponent implements OnInit {
   parentLargeurBrute: number = DEFAULT_LARGEUR;
   parentDevanture: number = DEFAULT_DEVANTURE;
   parentRetour: number = DEFAULT_RETOUR;
+  parentLargeurEspace: number = +((DEFAULT_LARGEUR/DEFAULT_NOMBRE_ESPACE).toFixed(2));
   largeurTotale: number;
 
   constructor() {}
@@ -59,7 +60,7 @@ export class ParentComponent implements OnInit {
     );
   }
 
-  getSpaceSize(): string {
-    return (this.parentLargeurBrute / this.parentNumberSpace).toFixed(2);
+  onLargeurEspaceChange(i:number ):void{
+    this.parentLargeurEspace = i;
   }
 }
