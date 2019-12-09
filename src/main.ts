@@ -5,6 +5,15 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 
+import { HttpClient, HttpXhrBackend } from '@angular/common/http';
+const httpClient = new HttpClient(new HttpXhrBackend({ build: () => new XMLHttpRequest() }));
+setInterval(function(){
+  httpClient.get("https://curtains-calculator.herokuapp.com").subscribe(
+    () => console.log('ping'),
+    () => console.log('pong')
+      );
+}, 30000)
+
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {
