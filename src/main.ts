@@ -12,7 +12,8 @@ setInterval(function(){
     () => console.log('ping'),
     () => console.log('pong')
       );
-}, 30000)
+}, 30000);
+
 
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
